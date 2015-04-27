@@ -6,7 +6,7 @@ defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
  * Plugin Name: WPDelayCron
  * Plugin URI: http://www.cmagic.biz/wordpress/wpdelaycron/
  * Description: Prevent wordpress from running cron on each page view.
- * Version: 0.0.3
+ * Version: 0.0.4
  * Author: Ray Pulsipher
  * Author URI: http://cmagic.biz
  * License: GPL2
