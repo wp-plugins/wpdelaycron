@@ -6,7 +6,7 @@ defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
  * Plugin Name: WPDelayCron
  * Plugin URI: http://www.cmagic.biz/wordpress/wpdelaycron/
  * Description: Prevent wordpress from running cron on each page view.
- * Version: 0.0.4
+ * Version: 0.0.5
  * Author: Ray Pulsipher
  * Author URI: http://cmagic.biz
  * License: GPL2
@@ -40,10 +40,9 @@ function wp_delaycron_install_actions()
 		add_action('admin_init', 'wp_delaycron_admin_init');
 		if(is_multisite())
 		{
-			add_action('network_admin_menu', 'wp_delaycron_admin_menus');
-		} else {
-			add_action('admin_menu', 'wp_delaycron_admin_menus');
+			//add_action('network_admin_menu', 'wp_delaycron_admin_menus');
 		}
+		add_action('admin_menu', 'wp_delaycron_admin_menus');
 	}
 }
 
